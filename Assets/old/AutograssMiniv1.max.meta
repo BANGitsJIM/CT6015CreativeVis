@@ -1,0 +1,221 @@
+fileFormatVersion: 2
+guid: d45a2d5cdb17d604a907e117fb62c4bc
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Box001
+    100004: CarBody
+    100006: GrillCap
+    100008: LightCap
+    100010: LightCap 1
+    100012: min-disco
+    100014: min-goma
+    100016: min-hierro
+    100018: min-interm-atras01
+    100020: min-morris
+    100022: min-negro
+    100024: min-neumatic
+    100026: min-seat
+    100028: min-silla
+    100030: min-silla01
+    100032: mini-BodyShell
+    100034: RimFrontDriver
+    100036: RimFrontPass
+    100038: RimRearDrive
+    100040: RimRearPass
+    100042: TireFrontDrive
+    100044: TireFrontPass
+    100046: TireRearDrive
+    100048: TireRearPass
+    100050: WheelFrontDrive
+    100052: WheelFrontPass
+    100054: WheelRearDrive
+    100056: WheelRearPass
+    400000: //RootNode
+    400002: Box001
+    400004: CarBody
+    400006: GrillCap
+    400008: LightCap
+    400010: LightCap 1
+    400012: min-disco
+    400014: min-goma
+    400016: min-hierro
+    400018: min-interm-atras01
+    400020: min-morris
+    400022: min-negro
+    400024: min-neumatic
+    400026: min-seat
+    400028: min-silla
+    400030: min-silla01
+    400032: mini-BodyShell
+    400034: RimFrontDriver
+    400036: RimFrontPass
+    400038: RimRearDrive
+    400040: RimRearPass
+    400042: TireFrontDrive
+    400044: TireFrontPass
+    400046: TireRearDrive
+    400048: TireRearPass
+    400050: WheelFrontDrive
+    400052: WheelFrontPass
+    400054: WheelRearDrive
+    400056: WheelRearPass
+    2100000: Tire
+    2100002: 'Material #55'
+    2100004: Trim
+    2100006: Metal
+    2100008: MiniBodyColour
+    2100010: 'Material #92'
+    2300000: Box001
+    2300002: GrillCap
+    2300004: LightCap
+    2300006: LightCap 1
+    2300008: min-disco
+    2300010: min-goma
+    2300012: min-hierro
+    2300014: min-interm-atras01
+    2300016: min-morris
+    2300018: min-negro
+    2300020: min-seat
+    2300022: min-silla
+    2300024: min-silla01
+    2300026: mini-BodyShell
+    2300028: RimFrontDriver
+    2300030: RimFrontPass
+    2300032: RimRearDrive
+    2300034: RimRearPass
+    2300036: TireFrontDrive
+    2300038: TireFrontPass
+    2300040: TireRearDrive
+    2300042: TireRearPass
+    3300000: Box001
+    3300002: GrillCap
+    3300004: LightCap
+    3300006: LightCap 1
+    3300008: min-disco
+    3300010: min-goma
+    3300012: min-hierro
+    3300014: min-interm-atras01
+    3300016: min-morris
+    3300018: min-negro
+    3300020: min-seat
+    3300022: min-silla
+    3300024: min-silla01
+    3300026: mini-BodyShell
+    3300028: RimFrontDriver
+    3300030: RimFrontPass
+    3300032: RimRearDrive
+    3300034: RimRearPass
+    3300036: TireFrontDrive
+    3300038: TireFrontPass
+    3300040: TireRearDrive
+    3300042: TireRearPass
+    4300000: TireFrontPass
+    4300002: RimFrontPass
+    4300004: TireFrontDrive
+    4300006: RimFrontDriver
+    4300008: TireRearPass
+    4300010: RimRearPass
+    4300012: TireRearDrive
+    4300014: RimRearDrive
+    4300016: min-silla01
+    4300018: min-silla
+    4300020: min-seat
+    4300022: min-negro
+    4300024: min-morris
+    4300026: min-interm-atras01
+    4300028: mini-BodyShell
+    4300030: min-hierro
+    4300032: min-goma
+    4300034: min-disco
+    4300036: LightCap
+    4300038: LightCap
+    4300040: GrillCap
+    4300042: Box001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

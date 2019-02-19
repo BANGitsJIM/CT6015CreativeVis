@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: a104bf8c978fe864da0a5f0f98c8539b
+guid: ae48ee5d0b564e745921526f022e643e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: Box001
-    100004: CarBody
+    100004: carbody
     100006: GrillCap
     100008: LightCap
     100010: LightCap 1
@@ -16,25 +16,23 @@ ModelImporter:
     100020: min-morris
     100022: min-negro
     100024: min-neumatic
-    100026: min-seat
-    100028: min-silla
-    100030: min-silla01
-    100032: mini-BodyShell
-    100034: RimFrontDriver
-    100036: RimFrontPass
-    100038: RimRearDrive
-    100040: RimRearPass
-    100042: TireFrontDrive
-    100044: TireFrontPass
-    100046: TireRearDrive
-    100048: TireRearPass
-    100050: WheelFrontDrive
-    100052: WheelFrontPass
-    100054: WheelRearDrive
-    100056: WheelRearPass
+    100026: min-silla01
+    100028: mini-BodyShell
+    100030: RimFrontDriver
+    100032: RimFrontPass
+    100034: RimRearDrive
+    100036: RimRearPass
+    100038: TireFrontDrive
+    100040: TireFrontPass
+    100042: TireRearDrive
+    100044: TireRearPass
+    100046: WheelFrontDrive
+    100048: WheelFrontPass
+    100050: WheelRearDrive
+    100052: WheelRearPass
     400000: //RootNode
     400002: Box001
-    400004: CarBody
+    400004: carbody
     400006: GrillCap
     400008: LightCap
     400010: LightCap 1
@@ -45,22 +43,20 @@ ModelImporter:
     400020: min-morris
     400022: min-negro
     400024: min-neumatic
-    400026: min-seat
-    400028: min-silla
-    400030: min-silla01
-    400032: mini-BodyShell
-    400034: RimFrontDriver
-    400036: RimFrontPass
-    400038: RimRearDrive
-    400040: RimRearPass
-    400042: TireFrontDrive
-    400044: TireFrontPass
-    400046: TireRearDrive
-    400048: TireRearPass
-    400050: WheelFrontDrive
-    400052: WheelFrontPass
-    400054: WheelRearDrive
-    400056: WheelRearPass
+    400026: min-silla01
+    400028: mini-BodyShell
+    400030: RimFrontDriver
+    400032: RimFrontPass
+    400034: RimRearDrive
+    400036: RimRearPass
+    400038: TireFrontDrive
+    400040: TireFrontPass
+    400042: TireRearDrive
+    400044: TireRearPass
+    400046: WheelFrontDrive
+    400048: WheelFrontPass
+    400050: WheelRearDrive
+    400052: WheelRearPass
     2100000: Tire
     2100002: 'Material #55'
     2100004: Trim
@@ -77,18 +73,16 @@ ModelImporter:
     2300014: min-interm-atras01
     2300016: min-morris
     2300018: min-negro
-    2300020: min-seat
-    2300022: min-silla
-    2300024: min-silla01
-    2300026: mini-BodyShell
-    2300028: RimFrontDriver
-    2300030: RimFrontPass
-    2300032: RimRearDrive
-    2300034: RimRearPass
-    2300036: TireFrontDrive
-    2300038: TireFrontPass
-    2300040: TireRearDrive
-    2300042: TireRearPass
+    2300020: min-silla01
+    2300022: mini-BodyShell
+    2300024: RimFrontDriver
+    2300026: RimFrontPass
+    2300028: RimRearDrive
+    2300030: RimRearPass
+    2300032: TireFrontDrive
+    2300034: TireFrontPass
+    2300036: TireRearDrive
+    2300038: TireRearPass
     3300000: Box001
     3300002: GrillCap
     3300004: LightCap
@@ -99,18 +93,16 @@ ModelImporter:
     3300014: min-interm-atras01
     3300016: min-morris
     3300018: min-negro
-    3300020: min-seat
-    3300022: min-silla
-    3300024: min-silla01
-    3300026: mini-BodyShell
-    3300028: RimFrontDriver
-    3300030: RimFrontPass
-    3300032: RimRearDrive
-    3300034: RimRearPass
-    3300036: TireFrontDrive
-    3300038: TireFrontPass
-    3300040: TireRearDrive
-    3300042: TireRearPass
+    3300020: min-silla01
+    3300022: mini-BodyShell
+    3300024: RimFrontDriver
+    3300026: RimFrontPass
+    3300028: RimRearDrive
+    3300030: RimRearPass
+    3300032: TireFrontDrive
+    3300034: TireFrontPass
+    3300036: TireRearDrive
+    3300038: TireRearPass
     4300000: TireFrontPass
     4300002: RimFrontPass
     4300004: TireFrontDrive
@@ -120,19 +112,17 @@ ModelImporter:
     4300012: TireRearDrive
     4300014: RimRearDrive
     4300016: min-silla01
-    4300018: min-silla
-    4300020: min-seat
-    4300022: min-negro
-    4300024: min-morris
-    4300026: min-interm-atras01
-    4300028: mini-BodyShell
-    4300030: min-hierro
-    4300032: min-goma
-    4300034: min-disco
-    4300036: LightCap
-    4300038: LightCap
-    4300040: GrillCap
-    4300042: Box001
+    4300018: min-negro
+    4300020: min-morris
+    4300022: min-interm-atras01
+    4300024: mini-BodyShell
+    4300026: min-hierro
+    4300028: min-goma
+    4300030: min-disco
+    4300032: LightCap
+    4300034: LightCap
+    4300036: GrillCap
+    4300038: Box001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -164,7 +154,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.001
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -184,7 +174,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
