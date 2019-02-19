@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 1368763167}
   - component: {fileID: 1368763166}
   - component: {fileID: 1368763165}
-  - component: {fileID: 1368763163}
   - component: {fileID: 1368763162}
   - component: {fileID: 1368763164}
+  - component: {fileID: 278979448774182921}
   m_Layer: 0
   m_Name: SignBreakable
-  m_TagString: Untagged
+  m_TagString: Sign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,19 +97,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1368763163
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368763161}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.79628867, y: 1.3136253, z: 0.69045264}
-  m_Center: {x: -0.11556682, y: 1.6423035e-15, z: 0.16007756}
 --- !u!114 &1368763162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,8 +111,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 218624199134755380, guid: 5d2cfec2da95f3540b8b31a135f79304,
     type: 3}
-  sign: {fileID: 1368763161}
 --- !u!65 &1368763164
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368763161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79628867, y: 1.3136253, z: 0.6798905}
+  m_Center: {x: -0.11556682, y: 7.075841e-16, z: 0.16535863}
+--- !u!65 &278979448774182921
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,5 +135,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.79628867, y: 1.3136253, z: 0.53864974}
-  m_Center: {x: -0.11556682, y: -6.519614e-17, z: 0.23597904}
+  m_Size: {x: 0.79628867, y: 1.3136253, z: 0.6798905}
+  m_Center: {x: -0.11556682, y: 7.075841e-16, z: 0.16535863}
