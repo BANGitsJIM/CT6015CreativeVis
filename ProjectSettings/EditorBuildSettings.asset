@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/MultipleTownScene.unity
     guid: af8bad93d396945449a32a5a95314376
   m_configObjects: {}
