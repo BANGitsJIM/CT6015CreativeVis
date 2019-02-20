@@ -13,22 +13,53 @@ public class CameraController : MonoBehaviour
 
     public void MoveToTarget()
     {
-        Vector3 _targetPos = objectToFollow.position +
+        //Reverse Camera if "Fire1" is Pressed
+        if (Input.GetButton("Fire1"))
+        {
+            Vector3 _targetPos = objectToFollow.position +
+                             objectToFollow.forward * -offset.z +
+                             objectToFollow.right * offset.x +
+                             objectToFollow.up * offset.y;
+
+            transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed + Time.deltaTime);
+        }
+        else
+        {
+            Vector3 _targetPos = objectToFollow.position +
                              objectToFollow.forward * offset.z +
                              objectToFollow.right * offset.x +
                              objectToFollow.up * offset.y;
 
-        transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed + Time.deltaTime);
+            transform.position = Vector3.Lerp(transform.position, _targetPos, followSpeed + Time.deltaTime);
+        }
     }
 
     public void FixedUpdate()
     {
-        LookAtTarget();
-        MoveToTarget();
+        //If mouse is pressed down
+        if (Input.GetMouseButtonDown(0))
+        {
+            dragOrigin = Input.mousePosition;
+            return;
+        }
+        else //If it is not pressed move camera to follow target
+        {
+            LookAtTarget();
+            MoveToTarget();
+        }
+
+        if (!Input.GetMouseButton(0)) return;
+
+        Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
+        Vector3 move = new Vector3(pos.x * dragSpeed, 0, pos.y * dragSpeed);
+
+        transform.Translate(move, Space.World);
     }
 
     public Transform objectToFollow;
     public Vector3 offset;
     public float followSpeed = 10;
     public float lookSpeed = 10;
+    public float dragSpeed = 2;
+    private Vector3 dragOrigin;
 }
