@@ -10,6 +10,8 @@ public class SignHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Spawn two objects when initialising start.
+        generateObjectOnTerrain();
         generateObjectOnTerrain();
     }
 
@@ -18,10 +20,11 @@ public class SignHandler : MonoBehaviour
         //Generate random x,z,y position on the terrain
         float randX = UnityEngine.Random.Range(-34, 7);
         float randZ = UnityEngine.Random.Range(-17, 24);
-        float yVal = 1f;
+        float randRot = UnityEngine.Random.Range(-360, 360);
+        float yVal = 0.2f;
 
         //Generate the Prefab on the generated position
-        GameObject objInstance = (GameObject)Instantiate(prefab, new Vector3(randX, yVal, randZ), Quaternion.Euler(-90, 90, 90));
+        GameObject objInstance = (GameObject)Instantiate(prefab, new Vector3(randX, yVal, randZ), Quaternion.Euler(-90, randRot, 90));
 
         //Debug.Log("Spawn at X:" + randX + "  Z:" + randZ);
     }
