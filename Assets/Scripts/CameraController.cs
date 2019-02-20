@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     public void MoveToTarget()
     {
         //Reverse Camera if "Fire1" is Pressed
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire2"))
         {
             Vector3 _targetPos = objectToFollow.position +
                              objectToFollow.forward * -offset.z +
@@ -48,8 +48,10 @@ public class CameraController : MonoBehaviour
             MoveToTarget();
         }
 
+        //If mouse is not pressed, end
         if (!Input.GetMouseButton(0)) return;
 
+        //Otherwise update the camera position via mouse position.
         Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
         Vector3 move = new Vector3(pos.x * dragSpeed, 0, pos.y * dragSpeed);
 

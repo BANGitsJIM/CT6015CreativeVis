@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestructibleController : MonoBehaviour
 {
     public GameObject destroyedVersion;
+    private bool isQuitting = false;
 
     void OnTriggerEnter(Collider other)
     {
@@ -12,6 +13,24 @@ public class DestructibleController : MonoBehaviour
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
+        }
+        if (other.tag == "Building")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnApplicationQuit()
+    {
+        isQuitting = true;
+    }
+
+    void OnDestroy()
+    {
+        if (!isQuitting)
+        {
+            GameObject myObject = GameObject.FindWithTag("MainCamera");
+            myObject.GetComponent<SignHandler>().generateObjectOnTerrain();
         }
     }
 }
