@@ -10,8 +10,8 @@ public class ResetCar : MonoBehaviour
     {
         if (transform.position.y < threshold)
         {
-            transform.position = new Vector3(5, 2, -8);
-            transform.rotation = Quaternion.identity;
+            transform.position = new Vector3(-22, 0, 10);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

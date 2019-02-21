@@ -20,11 +20,11 @@ public class CarController : MonoBehaviour
     private void Accelerate()
     {
         //FWD
-        frontDriverW.motorTorque = m_verticalInput * motorForce;
-        frontPassW.motorTorque = m_verticalInput * motorForce;
+        //frontDriverW.motorTorque = m_verticalInput * motorForce;
+        //frontPassW.motorTorque = m_verticalInput * motorForce;
         //RWD
-        //rearDriverW.motorTorque = m_verticalInput * motorForce;
-        //rearPassW.motorTorque = m_verticalInput * motorForce;
+        rearDriverW.motorTorque = m_verticalInput * motorForce;
+        rearPassW.motorTorque = m_verticalInput * motorForce;
     }
 
     private void UpdateWheelPoses()
