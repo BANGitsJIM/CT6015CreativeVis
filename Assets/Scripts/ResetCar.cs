@@ -5,13 +5,15 @@ using UnityEngine;
 public class ResetCar : MonoBehaviour
 {
     public float threshold;
+    public Vector3 ResetPosition;
 
     void FixedUpdate()
     {
         if (transform.position.y < threshold)
         {
-            transform.position = new Vector3(-22, 0, 10);
+            transform.position = ResetPosition;
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         }
     }
 }
