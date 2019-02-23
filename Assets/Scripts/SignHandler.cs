@@ -6,20 +6,28 @@ public class SignHandler : MonoBehaviour
 {
     public GameObject prefab;
     public GameObject terrain;
+    public float NumberOfSigns;
+    public float XCoordA;
+    public float XCoordB;
+    public float ZCoordA;
+    public float ZCoordB;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Spawn two objects when initialising start.
-        generateObjectOnTerrain();
-        generateObjectOnTerrain();
+        //Spawn objects when initialising on start depending on how many signs have been requested.
+        for (int i = 0; i < NumberOfSigns; i++)
+        {
+            //Debug.Log("Spawn");
+            generateObjectOnTerrain();
+        }
     }
 
     public void generateObjectOnTerrain()
     {
         //Generate random x,z,y position on the terrain
-        float randX = UnityEngine.Random.Range(-34, 7);
-        float randZ = UnityEngine.Random.Range(-17, 24);
+        float randX = UnityEngine.Random.Range(XCoordA, XCoordB);
+        float randZ = UnityEngine.Random.Range(ZCoordA, ZCoordB);
         float randRot = UnityEngine.Random.Range(-360, 360);
         float yVal = 0.2f;
 

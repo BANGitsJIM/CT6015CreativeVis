@@ -29,7 +29,7 @@ public class DestructibleController : MonoBehaviour
     {
         if (!isQuitting)
         {
-            GameObject myObject = GameObject.FindWithTag("MainCamera");
+            GameObject myObject = GameObject.FindWithTag("GameController");
             myObject.GetComponent<SignHandler>().generateObjectOnTerrain();
         }
     }
