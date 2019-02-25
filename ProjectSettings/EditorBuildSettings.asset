@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/MultipleTownScene.unity
-    guid: af8bad93d396945449a32a5a95314376
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 330e83cc6ddb88a4a9d5d3e2c9aa4b85
+  - enabled: 1
+    path: Assets/Scenes/CitySmall.unity
+    guid: f8e5d184065f4af4eabbc75e79c65e8f
+  - enabled: 1
+    path: Assets/Scenes/CityBig.unity
+    guid: a732fb2031dd5f44b8838742c47c87a3
   m_configObjects: {}
