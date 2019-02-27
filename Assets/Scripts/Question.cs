@@ -1,7 +1,9 @@
-﻿
-[System.Serializable]
+﻿[System.Serializable]
 public class Question
 {
     public string fact;
-    public bool isTrue;
+    public string answerA;
+    public string answerB;
+    public string answerC;
+    public int correctAnswer;
 }

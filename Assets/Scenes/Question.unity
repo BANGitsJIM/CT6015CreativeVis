@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 43468553}
   - component: {fileID: 43468552}
   m_Layer: 5
-  m_Name: Question
+  m_Name: Answer C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,7 +1179,7 @@ GameObject:
   - component: {fileID: 527529849}
   - component: {fileID: 527529848}
   m_Layer: 5
-  m_Name: Question
+  m_Name: Answer B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 1757003040}
   - component: {fileID: 1757003039}
   m_Layer: 5
-  m_Name: Question
+  m_Name: Question Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2162,7 +2162,7 @@ GameObject:
   - component: {fileID: 2117735554}
   - component: {fileID: 2117735553}
   m_Layer: 5
-  m_Name: Question
+  m_Name: Answer A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2341,12 +2341,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: Violets are red
-    isTrue: 0
-  - fact: Buses are small
-    isTrue: 0
-  - fact: Jamie is cool
-    isTrue: 1
+  - fact: At a traffic light, which colour means stop.
+    answerA: Red
+    answerB: Amber
+    answerC: Green
+    correctAnswer: 1
+  - fact: At any giveway line, which side do you give priority too.
+    answerA: Left
+    answerB: Right
+    answerC: Both
+    correctAnswer: 2
+  questionField: {fileID: 335722175}
+  factText: {fileID: 1757003039}
+  answerA: {fileID: 2117735553}
+  answerB: {fileID: 527529848}
+  answerC: {fileID: 43468552}
 --- !u!4 &2121227073
 Transform:
   m_ObjectHideFlags: 0
