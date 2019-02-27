@@ -6,12 +6,18 @@ public class DestructibleController : MonoBehaviour
 {
     public GameObject destroyedVersion;
     private bool isQuitting = false;
+    public string sceneName;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
+
+            Debug.Log(sceneName);
+
+            LoadMyScene();
+
             Destroy(gameObject);
         }
         if (other.tag == "Building")
@@ -20,12 +26,21 @@ public class DestructibleController : MonoBehaviour
         }
     }
 
-    void OnApplicationQuit()
+    private void LoadMyScene()
+    {
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            GameObject myObject = GameObject.FindWithTag("GameController");
+            myObject.GetComponent<LoadScene>().AddScene(sceneName);
+        }
+    }
+
+    private void OnApplicationQuit()
     {
         isQuitting = true;
     }
 
-    void OnDestroy()
+    private void OnDestroy()
     {
         if (!isQuitting)
         {

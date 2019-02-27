@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyedVersion: {fileID: 218624199134755380, guid: 5d2cfec2da95f3540b8b31a135f79304,
     type: 3}
+  sceneName: Fact
 --- !u!65 &1368763164
 BoxCollider:
   m_ObjectHideFlags: 0

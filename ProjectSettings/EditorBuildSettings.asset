@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CityBig.unity
     guid: a732fb2031dd5f44b8838742c47c87a3
+  - enabled: 1
+    path: Assets/Scenes/Question.unity
+    guid: 9c0b1b3681ee6944fadeb2791c6622b7
+  - enabled: 1
+    path: Assets/Scenes/Fact.unity
+    guid: 37a0f5ad5ad2a5f42bf8389f48508130
   m_configObjects: {}
