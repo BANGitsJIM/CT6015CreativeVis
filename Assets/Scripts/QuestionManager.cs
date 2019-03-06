@@ -28,6 +28,8 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     private TMP_Text answerC;
 
+    public Animator animator;
+
     private void Start()
     {
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
@@ -61,10 +63,19 @@ public class QuestionManager : MonoBehaviour
         if (currentQuestion.correctAnswer == answer)
         {
             Debug.Log("CORRECT");
+            animator.SetTrigger("correct");
+
+            GameObject gameController = GameObject.FindWithTag("GameController");
+            gameController.GetComponent<Timer>().score++;
+            gameController.GetComponent<Timer>().answeredQuestions++;
         }
         else
         {
             Debug.Log("INCORRECT");
+            animator.SetTrigger("incorrect");
+
+            GameObject gameController = GameObject.FindWithTag("GameController");
+            gameController.GetComponent<Timer>().answeredQuestions++;
         }
     }
 }

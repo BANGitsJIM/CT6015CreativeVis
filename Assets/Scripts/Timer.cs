@@ -7,19 +7,24 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
-    private float time = 300;
+    public float time = 300;
+    public int score = 0;
+    public int answeredQuestions = 0;
+    public int maxScore = 10;
+
+    public TMP_Text scoreText;
 
     // Start is called before the first frame update
     private void Start()
     {
         StartCoundownTimer();
+        score = 0;
     }
 
     private void StartCoundownTimer()
     {
         if (timerText != null)
         {
-            time = 10;
             timerText.text = "05:00";
             InvokeRepeating("UpdateTimer", 0.0f, 0.01667f);
         }
@@ -28,6 +33,8 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     private void UpdateTimer()
     {
+        scoreText.text = "Score: " + score + "/" + answeredQuestions;
+
         if (timerText != null)
         {
             time -= Time.deltaTime;
@@ -41,6 +48,11 @@ public class Timer : MonoBehaviour
         {
             CancelInvoke();
             timerText.text = "Game Over";
+        }
+
+        if (score >= maxScore)
+        {
+            Debug.Log("End Game");
         }
     }
 }

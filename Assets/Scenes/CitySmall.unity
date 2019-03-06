@@ -8510,7 +8510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToFollow: {fileID: 2567608216157647960}
   offset: {x: 0, y: 0.8, z: -2}
-  followSpeed: 10
+  followSpeed: 0.2
   lookSpeed: 80
   dragSpeed: 2
 --- !u!1 &614189452
