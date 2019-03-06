@@ -5,5 +5,5 @@ public class Question
     public string answerA;
     public string answerB;
     public string answerC;
-    public int correctAnswer;
+    public string correctAnswer;
 }

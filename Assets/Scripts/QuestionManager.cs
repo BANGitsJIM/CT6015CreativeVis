@@ -10,13 +10,11 @@ public class QuestionManager : MonoBehaviour
     public Question[] questions;
 
     private static List<Question> unansweredQuestions;
-    private float questionNum;
-    private float maxQuestionCount = 2;
 
     private Question currentQuestion;
 
     [SerializeField]
-    private TMP_Text questionField;
+    private TMP_Text questionNumber;
 
     [SerializeField]
     private TMP_Text factText;
@@ -35,7 +33,6 @@ public class QuestionManager : MonoBehaviour
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
             unansweredQuestions = questions.ToList<Question>();
-            questionNum = ((maxQuestionCount + 1) - unansweredQuestions.Count);
         }
 
         SetRandomQuestion();
@@ -47,8 +44,10 @@ public class QuestionManager : MonoBehaviour
         int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
         currentQuestion = unansweredQuestions[randomQuestionIndex];
 
+        float currentQuestionNumber = (questions.Length + 1 - unansweredQuestions.Count);
+        questionNumber.text = "Question " + currentQuestionNumber.ToString();
+
         factText.text = currentQuestion.fact;
-        questionField.text = "Question " + questionNum.ToString();
         answerA.text = currentQuestion.answerA;
         answerB.text = currentQuestion.answerB;
         answerC.text = currentQuestion.answerC;
@@ -57,7 +56,15 @@ public class QuestionManager : MonoBehaviour
         unansweredQuestions.RemoveAt(randomQuestionIndex);
     }
 
-    public void UserSelects(int choice)
+    public void SelectAnswer(string answer)
     {
+        if (currentQuestion.correctAnswer == answer)
+        {
+            Debug.Log("CORRECT");
+        }
+        else
+        {
+            Debug.Log("INCORRECT");
+        }
     }
 }
