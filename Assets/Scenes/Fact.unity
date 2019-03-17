@@ -1147,11 +1147,11 @@ MonoBehaviour:
       than 50 milligrammes/100 '
   - title: "Rule 99 \u2013 Seat Belts"
     fact: You MUST wear a seat belt in cars, vans and other goods vehicles if one
-      is fitted (see table below). Adults, and children aged 14 years and over, MUST
-      use a seat belt or child restraint, where fitted, when seated in minibuses,
-      buses and coaches. Exemptions are allowed for the holders of medical exemption
-      certificates and those making deliveries or collections in goods vehicles when
-      travelling less than 50 metres (approx 162 feet).
+      is fitted. Adults, and children aged 14 years and over, MUST use a seat belt
+      or child restraint, where fitted, when seated in minibuses, buses and coaches.
+      Exemptions are allowed for the holders of medical exemption certificates and
+      those making deliveries or collections in goods vehicles when travelling less
+      than 50 metres (approx 162 feet).
   - title: "Rule 101 \u2013 Baby Seats"
     fact: A rear-facing baby seat MUST NOT be fitted into a seat protected by an active
       frontal airbag, as in a crash it can cause serious injury or death to the child.

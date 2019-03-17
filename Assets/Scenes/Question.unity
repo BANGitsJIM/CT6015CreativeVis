@@ -2825,15 +2825,134 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: At a traffic light, which colour means stop.
-    answerA: Red
-    answerB: Amber
-    answerC: Green
+  - fact: When fitting a rear-facing baby seat, what must you NOT do
+    answerA: Secure the seat correctly
+    answerB: Fit the seat into a seat protected by an active frontal airbag
+    answerC: Check the type of seat is suitable for the vehicle
+    correctAnswer: B
+  - fact: When signalling (indicating), it is correct to
+    answerA: Signal before checking all your mirrors
+    answerB: Keep them on for an extended period of time after you have used them
+    answerC: Give clear signals in plenty of time, having checked it is not misleading
+      to signal at that time
+    correctAnswer: C
+  - fact: What should you do if a police officer attempts to stop your vehicle.
+    answerA: Ignore the police officer, until they put on their sirens
+    answerB: Pull over and stop as soon as it is safe to do so
+    answerC: Pull over immediately
+    correctAnswer: B
+  - fact: When should you flash your headlights
+    answerA: To let other road users know you are there
+    answerB: To signal other road users letting them proceed
+    answerC: To alert other drivers of a speed camera
     correctAnswer: A
-  - fact: At any giveway line, which side do you give priority too.
-    answerA: Left
-    answerB: Right
-    answerC: Both
+  - fact: Between what hours is it unnacceptable to use your horn except in an emergency.
+    answerA: 09:00 pm - 06:00 am
+    answerB: 01:00 am - 05:00 am
+    answerC: 11:30 pm - 07:00 am
+    correctAnswer: C
+  - fact: In what circumstances can you use your fog lights
+    answerA: In seriously reduced visibility
+    answerB: During night hours
+    answerC: Any time
+    correctAnswer: A
+  - fact: When is it appropriate to use your hazard lights
+    answerA: To thank a driver for giving your priority
+    answerB: When your car has broken down in a safe location and it is not obstructing
+      traffic
+    answerC: To warn other drivers on a motorway that their is a hazard ahead
+    correctAnswer: C
+  - fact: What should you do if you have driven through deep water
+    answerA: Test your brakes at the first safe opportunity
+    answerB: Brake really hard to make sure you get all the water off the brakes
+    answerC: No action is required
+    correctAnswer: A
+  - fact: What is coasting?
+    answerA: Driving slowly with all the windows down on a coastal road
+    answerB: Driving in neutral or with the clutch pressed down
+    answerC: Driving irratically in a way that could harm you or other road users.
+    correctAnswer: B
+  - fact: When may you leave your vehicle parked with the engine running
+    answerA: When diagnosing a fault
+    answerB: This is never acceptable
+    answerC: Whilst stationary with the parking brake on
+    correctAnswer: A
+  - fact: What does the presence of street lights generally mean
+    answerA: That it's a well lit area and head lights are not required
+    answerB: That the area is busy
+    answerC: That the speed limit is 30mph
+    correctAnswer: B
+  - fact: What is the speed limit for a Car on a Motorway
+    answerA: 50mph (80 km/h)
+    answerB: 60mph (96 km/h)
+    answerC: 70mph (112 km/h)
+    correctAnswer: C
+  - fact: What is the speed limit for a Car on a single carriageway
+    answerA: 50mph (80 km/h)
+    answerB: 60mph (96 km/h)
+    answerC: 70mph (112 km/h)
+    correctAnswer: B
+  - fact: What is the speed limit for a Car on a dual carriageway
+    answerA: 50mph (80 km/h)
+    answerB: 60mph (96 km/h)
+    answerC: 70mph (112 km/h)
+    correctAnswer: C
+  - fact: What is the speed limit for a Car in a built up area
+    answerA: 30mph (48 km/h)
+    answerB: 50mph (80 km/h)
+    answerC: 60mph (96 km/h)
+    correctAnswer: A
+  - fact: What is the speed limit for a Car towing a trailer on the motorway
+    answerA: 50mph (80 km/h)
+    answerB: 60mph (96 km/h)
+    answerC: 70mph (112 km/h)
+    correctAnswer: B
+  - fact: What is the speed limit for a Bus/Coach on a single carriageway
+    answerA: 30mph (48 km/h)
+    answerB: 50mph (80 km/h)
+    answerC: 60mph (96 km/h)
+    correctAnswer: B
+  - fact: When can you exceed the speed limit
+    answerA: When it is clear and safe to do so
+    answerB: When the weather permits it
+    answerC: Never
+    correctAnswer: C
+  - fact: What does a broken white line represent
+    answerA: The space between the road and the footpath
+    answerB: An area in which you cannot overtake
+    answerC: The center of the road
+    correctAnswer: C
+  - fact: What do the reflective amber stud marks signal
+    answerA: The lane or the middle of the road
+    answerB: The central reservation of a dual carriageway or motorway
+    answerC: The edge of the main carriage way
+    correctAnswer: B
+  - fact: What is a dual carriageway
+    answerA: A road with two lanes
+    answerB: A road with more than one lane
+    answerC: A road with a central reservation
+    correctAnswer: C
+  - fact: When can you drive over a footpath
+    answerA: When there are no other parking alternatives
+    answerB: To gain access to a property
+    answerC: When picking up a friend from their house
+    correctAnswer: B
+  - fact: What does a speed limit mean
+    answerA: This is the absolute maximum speed you should travel at
+    answerB: It is not appropriate to driver slower than this speed
+    answerC: You must drive at this speed
+    correctAnswer: A
+  - fact: In slow moving traffic you should
+    answerA: Get as close to the car infront of you as possible
+    answerB: Move into the left lane to overtake instead
+    answerC: Reduce the distance between you and the vehicle ahead but leave room
+      to manoeuvre
+    correctAnswer: C
+  - fact: When can you use a hand-held mobile whilst driving
+    answerA: You can never use a mobile phone whilst driving
+    answerB: To call 999 or 112 in a genuine emergency when it is unsafe or impractical
+      to stop
+    answerC: Whenever you like as long as you have it connected to a hands-free device
     correctAnswer: B
   questionNumber: {fileID: 335722175}
   factText: {fileID: 1757003039}
