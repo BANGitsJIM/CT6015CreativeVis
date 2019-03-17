@@ -1137,20 +1137,375 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facts:
-  - title: Do Huntsman make webs?
-    fact: 'As adults, huntsman spiders do not build webs, but hunt and forage for
-      food: their diet consists primarily of insects and other invertebrates, and
-      occasionally small skinks and geckos. They live in the crevices of tree bark,
-      but will frequently wander into homes and vehicles.'
-  - title: When is Cinco de Mayo celebrated in US?
-    fact: Cinco de Mayo is annually observed on May 5. It celebrates the defeat of
-      the French army during the Battle of Puebla (Batalla de Puebla) in Mexico on
-      May 5, 1862. It is not to be confused with Mexico's Independence Day. Cinco
-      de Mayo is a day of Mexican pride and heritage.
-  - title: What year did Star Wars debut?
-    fact: The first film in the series was originally released on May 25, 1977, under
-      the title Star Wars, by 20th Century Fox, and became a worldwide pop culture
-      phenomenon, followed by two sequels, released at three-year intervals.
+  - title: "Rule 95 \u2013 Drink Driving"
+    fact: ' Do not drink and drive as it will seriously affect your judgement and
+      abilities.<br> In England and Wales you MUST NOT drive with a breath alcohol
+      level higher than 35 microgrammes/100 millilitres of breath or a blood alcohol
+      level of more than 80 milligrammes/100 millilitres of blood.<br> In Scotland
+      the legal limits are lower. You MUST NOT drive with a breath alcohol level higher
+      than 22 microgrammes/100 millilitres of breath or a blood alcohol level of more
+      than 50 milligrammes/100 '
+  - title: "Rule 99 \u2013 Seat Belts"
+    fact: You MUST wear a seat belt in cars, vans and other goods vehicles if one
+      is fitted (see table below). Adults, and children aged 14 years and over, MUST
+      use a seat belt or child restraint, where fitted, when seated in minibuses,
+      buses and coaches. Exemptions are allowed for the holders of medical exemption
+      certificates and those making deliveries or collections in goods vehicles when
+      travelling less than 50 metres (approx 162 feet).
+  - title: "Rule 101 \u2013 Baby Seats"
+    fact: A rear-facing baby seat MUST NOT be fitted into a seat protected by an active
+      frontal airbag, as in a crash it can cause serious injury or death to the child.
+  - title: "Rule 103 \u2013 Signalling"
+    fact: 'Signals warn and inform other road users, including pedestrians of your
+      intended actions. You should always: <br>Give clear signals in plenty of time,
+      having checked it is not misleading to signal at that time.<br>Use them to advise
+      other road users before changing course or direction, stopping or moving off.<br>Cancel
+      them after use.<br>make sure your signals will not confuse others. If, for instance,
+      you want to stop after a side road, do not signal until you are passing the
+      road. If you signal earlier it may give the impression that you intend to turn
+      into the road. Your brake lights will warn traffic behind you that you are slowing
+      down<br>use an arm signal to emphasise or reinforce your signal if necessary.
+      Remember that signalling does not give you priority.'
+  - title: "Rule 105 & 106 \u2013 Authority"
+    fact: You MUST obey signals given by police officers, traffic officers, traffic
+      wardens and signs used by school crossing patrols.<br><br>If the police want
+      to stop your vehicle they will, where possible, attract your attention by flashing
+      blue lights, headlights or sounding their siren or horn, usually from behind,
+      or directing you to pull over to the side by pointing and/or using the left
+      indicator. You MUST then pull over and stop as soon as it is safe to do so.
+      Then switch off your engine.
+  - title: "Rule 107 \u2013 Vehicle Standards Agency "
+    fact: Driver and Vehicle Standards Agency officers have the power to stop vehicles
+      on all roads, including motorways and trunk roads. They will attract your attention
+      by flashing amber lights either from the front requesting you to follow them
+      to a safe place to stop or from behind directing you to pull over to the side
+      by pointing and/or using the left indicator.<br>It is an offence not to comply
+      with their directions. You MUST obey any signals given.
+  - title: "Rule 110 & 111 \u2013 Flashing Headlights"
+    fact: Only flash your headlights to let other road users know that you are there.
+      Do not flash your headlights to convey any other message or intimidate other
+      road users.<br>Never assume that flashing headlights is a signal inviting you
+      to proceed. Use your own judgement and proceed carefully.
+  - title: "Rule 112 \u2013 The Horn"
+    fact: The horn. Use only while your vehicle is moving and you need to warn other
+      road users of your presence. Never sound your horn aggressively. You MUST NOT
+      use your horn while stationary on the road or when driving in a built-up area
+      between the hours of 11.30 pm and 7.00 am EXCEPT when another road user poses
+      a danger.
+  - title: "Rule 113 \u2013 Lighting"
+    fact: You MUST ensure all sidelights and rear registration plate lights are lit
+      between sunset and sunrise.<br>Use headlights at night, except on a road which
+      has lit street lighting. These roads are generally restricted to a speed limit
+      of 30 mph (48 km/h) unless otherwise specified.<br>Use headlights when visibility
+      is seriously reduced.<br> Night (the hours of darkness) is defined as the period
+      between half an hour after sunset and half an hour before sunrise.
+  - title: "Rule 114 \u2013 Lighting #2"
+    fact: "You MUST NOT:<br><br> \u2022\tUse any lights in a way which would dazzle
+      or cause discomfort to other road users, including pedestrians, cyclists and
+      horse riders.<br> \u2022\tUse front or rear fog lights unless visibility is
+      seriously reduced. <br> In stationary queues of traffic, drivers should apply
+      the parking brake and, once the following traffic has stopped, take their foot
+      off the footbrake to deactivate the vehicle brake lights. This will minimise
+      glare to road users behind until the traffic moves again."
+  - title: "Rule 115 \u2013 Lighting #3"
+    fact: "You should: <br><br> \u2022\tUse dipped headlights, or dim-dip if fitted,
+      at night in built-up areas and in dull daytime weather, to ensure that you can
+      be seen.<br> \u2022\tKeep your headlights dipped when overtaking until you are
+      level with the other vehicle and then change to main beam if necessary, unless
+      this would dazzle oncoming road users<br> \u2022\tSlow down, and if necessary
+      stop, if you are dazzled by oncoming headlights."
+  - title: "Rule 116 \u2013 Hazard warning Lights"
+    fact: Hazard warning lights. These may be used when your vehicle is stationary,
+      to warn that it is temporarily obstructing traffic. Never use them as an excuse
+      for dangerous or illegal parking. You MUST NOT use hazard warning lights while
+      driving or being towed unless you are on a motorway or unrestricted dual carriageway
+      and you need to warn drivers behind you of a hazard or obstruction ahead. Only
+      use them for long enough to ensure that your warning has been observed.
+  - title: "Rule 117 \u2013 Braking in normal circumstances"
+    fact: The safest way to brake is to do so early and lightly. Brake more firmly
+      as you begin to stop. Ease the pressure off just before the vehicle comes to
+      rest to avoid a jerky stop.
+  - title: Rule 118 - Braking in an emergency
+    fact: Brake immediately. Try to avoid braking so harshly that you lock your wheels.
+      Locked wheels can lead to loss of control.
+  - title: "Rule 119 \u2013 Skids"
+    fact: Skidding is usually caused by the driver braking, accelerating or steering
+      too harshly or driving too fast for the road conditions. If skidding occurs,
+      remove the cause by releasing the brake pedal fully or easing off the accelerator.
+      Turn the steering wheel in the direction of the skid. For example, if the rear
+      of the vehicle skids to the right, steer immediately to the right to recover.
+  - title: "Rule 120 \u2013 ABS"
+    fact: If your vehicle is fitted with anti-lock brakes, you should follow the advice
+      given in the vehicle handbook. However, in the case of an emergency, apply the
+      footbrake firmly; do not release the pressure until the vehicle has slowed to
+      the desired speed. The ABS should ensure that steering control will be retained,
+      but do not assume that a vehicle with ABS will stop in a shorter distance.
+  - title: "Rule 221 \u2013 Brakes affected by water"
+    fact: If you have driven through deep water your brakes may be less effective.
+      Test them at the first safe opportunity by pushing gently on the brake pedal
+      to make sure that they work. If they are not fully effective, gently apply light
+      pressure while driving slowly. This will help to dry them out.
+  - title: "Rule 122 \u2013 Coasting"
+    fact: "This term describes a vehicle travelling in neutral or with the clutch
+      pressed down. It can reduce driver control because<br> \u2022\tengine braking
+      is eliminated<br> \u2022\tvehicle speed downhill will increase quickly<br> \u2022\tincreased
+      use of the footbrake can reduce its effectiveness<br> \u2022\tsteering response
+      will be affected, particularly on bends and corners<br> \u2022\tit may be more
+      difficult to select the appropriate gear when needed. "
+  - title: "Rule 123 \u2013 The Driver and the Environment."
+    fact: You MUST NOT leave a parked vehicle unattended with the engine running or
+      leave a vehicle engine running unnecessarily while that vehicle is stationary
+      on a public road. Generally, if the vehicle is stationary and is likely to remain
+      so for more than a couple of minutes, you should apply the parking brake and
+      switch off the engine to reduce emissions and noise pollution. However it is
+      permissible to leave the engine running if the vehicle is stationary in traffic
+      or for diagnosing faults.
+  - title: "Rule 124 \u2013 Speed limits"
+    fact: You MUST NOT exceed the maximum speed limits for the road and for your vehicle.
+      The presence of street lights generally means that there is a 30 mph (48 km/h)
+      speed limit unless otherwise specified.
+  - title: "Rule 124 \u2013 Speed limits for Cars and motorcycles"
+    fact: "Speed limits vary depending on the type of vehicle and what road the vehicle
+      is travelling on.<br><br> For cars and motorcycles:<br> \u2022\tBuilt up areas
+      = 30 mph (48 km/h)<br> \u2022\tSingle carriageways = 60 mph (96 km/h) <br> \u2022\tDual
+      carriageways = 70 mph (112 km/h) <br> \u2022\tMotorways = 70 mph (112 km/h)"
+  - title: "Rule 124 \u2013 Speed limits for Cars towing caravans or trailers"
+    fact: "Speed limits vary depending on the type of vehicle and what road the vehicle
+      is travelling on.<br><br>  For cars towing caravans or trailers:<br> \u2022\tBuilt
+      up areas = 30 mph (48 km/h) <br> \u2022\tSingle carriageways = 50 mph (80 km/h)
+      <br> \u2022\tDual carriageways = 60 mph (96 km/h) <br> \u2022\tMotorways = 60
+      mph (96 km/h)"
+  - title: "Rule 124 \u2013 Speed limits for Buses, coaches and minibuses  "
+    fact: "Speed limits vary depending on the type of vehicle and what road the vehicle
+      is travelling on.<br><br>  For buses, coaches and minibuses:<br> \u2022\tBuilt
+      up areas = 30 mph (48 km/h) <br> \u2022\tSingle carriageways = 50 mph (80 km/h)
+      <br> \u2022\tDual carriageways = 60 mph (96 km/h) <br> \u2022\tMotorways = 70
+      mph (112 km/h) "
+  - title: "Rule 124 \u2013 Speed limits for Goods vehicles (not exceeding 7.5 tonnes
+      maximum laden weight)"
+    fact: "Speed limits vary depending on the type of vehicle and what road the vehicle
+      is travelling on.<br><br>  For goods vehicles (UNDER 7.5 tonnes) :<br> \u2022\tBuilt
+      up areas = 30 mph (48 km/h) <br> \u2022\tSingle carriageways = 50 mph (80 km/h)
+      <br> \u2022\tDual carriageways = 60 mph (96 km/h) <br> \u2022\tMotorways = 70
+      mph (112 km/h) "
+  - title: "Rule 125 \u2013 Speed Limit"
+    fact: "The speed limit is the absolute maximum and does not mean it is safe to
+      drive at that speed irrespective of conditions. Driving at speeds too fast for
+      the road and traffic conditions is dangerous. You should always reduce your
+      speed when<br><br> \u2022\tthe road layout or condition presents hazards, such
+      as bends<br> \u2022\tsharing the road with pedestrians, cyclists and horse riders,
+      particularly children, and motorcyclists<br> \u2022\tweather conditions make
+      it safer to do so<br> \u2022\tdriving at night as it is more difficult to see
+      other road users."
+  - title: "Rule 126 \u2013 Typical Stopping Distances"
+    fact: "Drive at a speed that will allow you to stop well within the distance you
+      can see to be clear. You should<br><br> \u2022\tleave enough space between you
+      and the vehicle in front so that you can pull up safely if it suddenly slows
+      down or stops. The safe rule is never to get closer than the overall stopping
+      distance<br> \u2022\tallow at least a two-second gap between you and the vehicle
+      in front on roads carrying faster-moving traffic and in tunnels where visibility
+      is reduced. The gap should be at least doubled on wet roads and increased still
+      further on icy roads<br> \u2022\tremember, large vehicles and motorcycles need
+      a greater distance to stop. If driving a large vehicle in a tunnel, you should
+      allow a four-second gap between you and the vehicle in front. <br> If you have
+      to stop in a tunnel, leave at least a 5-metre gap between you and the vehicle
+      in front."
+  - title: "Rule 126 \u2013 Stopping Distances #2"
+    fact: "Stopping distances vary, the distances shown are a general guide. The distance
+      will depend on your attention, the road surface, the weather conditions and
+      the condition of your vehicle at the time<br><br> \u2022\t20 mph (32 km/h) =
+      12 metres (40 feet) or three car lengths.<br> \u2022\t30 mph (48 km/h) = 23
+      metres (75 feet) or six car lengths. <br> \u2022\t40 mph (64 km/h) = 36 metres
+      (118 feet) or nine car lengths. <br> \u2022\t50 mph (80 km/h) = 53 metres (175
+      feet) or thirteen car lengths. <br> \u2022\t60 mph (96 km/h) = 73 metres (240
+      feet) or eighteen car lengths. <br> \u2022\t70 mph (112 km/h) = 96 metres (315
+      feet) or twenty-four car lengths."
+  - title: "Rule 127 \u2013 Broken White Line"
+    fact: A broken white line. This marks the centre of the road. When this line lengthens
+      and the gaps shorten, it means that there is a hazard ahead. Do not cross it
+      unless you can see the road is clear and wish to overtake or turn off.
+  - title: Rule 128 - Double white lines where the line nearest to you is broken.
+    fact: This means you may cross the lines to overtake if it is safe, provided you
+      can complete the manoeuvre before reaching a solid white line on your side.
+      White direction arrows on the road indicate that you need to get back onto your
+      side of the road.
+  - title: 'Rule 129 - Double white lines where the line nearest you is solid. '
+    fact: Double white lines where the line nearest you is solid. This means you MUST
+      NOT cross or straddle it unless it is safe and you need to enter adjoining premises
+      or a side road. You may cross the line if necessary, provided the road is clear,
+      to pass a stationary vehicle, or overtake a pedal cycle, horse or road maintenance
+      vehicle, if they are travelling at 10 mph (16 km/h) or less.
+  - title: "Rule 130 \u2013 Areas of white diagonal stripes"
+    fact: "Areas of white diagonal stripes or chevrons painted on the road. These
+      are to separate traffic lanes or to protect traffic turning right.<br><br> \u2022\tIf
+      the area is bordered by a broken white line, you should not enter the area unless
+      it is necessary and you can see that it is safe to do so.<br> \u2022\tIf the
+      area is marked with chevrons and bordered by solid white lines you MUST NOT
+      enter it except in an emergency. "
+  - title: "Rule 131 \u2013 Lane Dividers"
+    fact: Lane dividers. These are short, broken white lines which are used on wide
+      carriageways to divide them into lanes. You should keep between them.
+  - title: "Rule 132 \u2013 Reflective road studs"
+    fact: "Reflective road studs may be used with white lines.<br><br> \u2022\tWhite
+      studs mark the lanes or the middle of the road. <br> \u2022\tRed studs mark
+      the left edge of the road. <br> \u2022\tAmber studs mark the central reservation
+      of a dual carriageway or motorway. <br> \u2022\tGreen studs mark the edge of
+      the main carriageway at lay-bys and slip roads. <br> \u2022\tGreen/yellow studs
+      indicate temporary adjustments to lane layouts, e.g. where road works are taking
+      place."
+  - title: "Rule 133 \u2013 Changing lane"
+    fact: If you need to change lane, first use your mirrors and if necessary take
+      a quick sideways glance to make sure you will not force another road user to
+      change course or speed. When it is safe to do so, signal to indicate your intentions
+      to other road users and when clear, move over.
+  - title: "Rule 134 \u2013 Lane Discipline"
+    fact: You should follow the signs and road markings and get into the lane as directed.
+      In congested road conditions do not change lanes unnecessarily. Merging in turn
+      is recommended but only if safe and appropriate when vehicles are travelling
+      at a very low speed, e.g. when approaching road works or a road traffic incident.
+      It is not recommended at high speed.
+  - title: "Rule 135 & 136 \u2013 Single carriageway"
+    fact: "Where a single carriageway has three lanes and the road markings or signs
+      do not give priority to traffic in either direction<br><br> \u2022\tuse the
+      middle lane only for overtaking or turning right. Remember, you have no more
+      right to use the middle lane than a driver coming from the opposite direction<br>
+      \u2022\tdo not use the right-hand lane.<br> Where a single carriageway has four
+      or more lanes, use only the lanes that signs or markings indicate."
+  - title: "Rule 137 & 138 \u2013 Dual carriageways"
+    fact: A dual carriageway is a road which has a central reservation to separate
+      the carriageways.<br> On a two-lane dual carriageway you should stay in the
+      left-hand lane. Use the right-hand lane for overtaking or turning right. After
+      overtaking, move back to the left-hand lane when it is safe to do so.<br> On
+      a three-lane dual carriageway, you may use the middle lane or the right-hand
+      lane to overtake but return to the middle and then the left-hand lane when it
+      is safe.
+  - title: "Rule 139 \u2013 Climbing and crawler lanes."
+    fact: Climbing and crawler lanes. These are provided on some hills. Use this lane
+      if you are driving a slow-moving vehicle or if there are vehicles behind you
+      wishing to overtake. Be aware of the signs and road markings which indicate
+      the lane is about to end.
+  - title: "Rule 140 \u2013 Cycle lanes"
+    fact: Cycle lanes. These are shown by road markings and signs. You MUST NOT drive
+      or park in a cycle lane marked by a solid white line during its times of operation.
+      Do not drive or park in a cycle lane marked by a broken white line unless it
+      is unavoidable. You MUST NOT park in any cycle lane whilst waiting restrictions
+      apply.
+  - title: 'Rule 141 - Bus lanes. '
+    fact: Bus lanes. These are shown by road markings and signs that indicate which
+      (if any) other vehicles are permitted to use the bus lane. Unless otherwise
+      indicated, you should not drive in a bus lane during its period of operation.
+      You may enter a bus lane to stop, to load or unload where this is not prohibited.
+  - title: "Rule 143 \u2013 One-Way streets"
+    fact: "One-way streets. Traffic MUST travel in the direction indicated by signs.
+      Buses and/or cycles may have a contraflow lane. Choose the correct lane for
+      your exit as soon as you can. Do not change lanes suddenly. Unless road signs
+      or markings indicate otherwise, you should use<br><br> \u2022\tthe left-hand
+      lane when going left<br> \u2022\tthe right-hand lane when going right<br> \u2022\tthe
+      most appropriate lane when going straight ahead. Remember \u2013 traffic could
+      be passing on both sides. "
+  - title: "Rule 144 \u2013 Bad driving"
+    fact: "You MUST NOT<br><br> \u2022\tdrive dangerously<br> \u2022\tdrive without
+      due care and attention<br> \u2022\tdrive without reasonable consideration for
+      other road users. <br> "
+  - title: "Rule 145 \u2013 Footpaths"
+    fact: You MUST NOT drive on or over a pavement, footpath or bridleway except to
+      gain lawful access to property, or in the case of an emergency.
+  - title: Rule 146 - Adapt your driving
+    fact: "Adapt your driving to the appropriate type and condition of road you are
+      on. In particular<br><br> \u2022\tdo not treat speed limits as a target. It
+      is often not appropriate or safe to drive at the maximum speed limit<br> \u2022\ttake
+      the road and traffic conditions into account. Be prepared for unexpected or
+      difficult situations, for example, the road being blocked beyond a blind bend.
+      Be prepared to adjust your speed as a precaution<br> \u2022\twhere there are
+      junctions, be prepared for road users emerging<br> \u2022\tin side roads and
+      country lanes look out for unmarked junctions where nobody has priority<br>
+      \u2022\tbe prepared to stop at traffic control systems, road works, pedestrian
+      crossings or traffic lights as necessary<br> \u2022\ttry to anticipate what
+      pedestrians and cyclists might do. If pedestrians, particularly children, are
+      looking the other way, they may step out into the road without seeing you. "
+  - title: "Rule 147 \u2013 Be considerate"
+    fact: "Be considerate. Be careful of and considerate towards all types of road
+      users, especially those requiring extra care<br><br> \u2022\tyou MUST NOT throw
+      anything out of a vehicle; for example, food or food packaging, cigarette ends,
+      cans, paper or carrier bags. This can endanger other road users, particularly
+      motorcyclists and cyclists. <br> \u2022\ttry to be understanding if other road
+      users cause problems; they may be inexperienced or not know the area well. <br>
+      \u2022\tbe patient; remember that anyone can make a mistake. <br> \u2022\tdo
+      not allow yourself to become agitated or involved if someone is behaving badly
+      on the road. This will only make the situation worse. Pull over, calm down and,
+      when you feel relaxed, continue your journey. <br> \u2022\tslow down and hold
+      back if a road user pulls out into your path at a junction. Allow them to get
+      clear. Do not over-react by driving too close behind to intimidate them."
+  - title: "Rule 148 \u2013 Smoking"
+    fact: You MUST NOT smoke in public transport vehicles or in vehicles used for
+      work purposes in certain prescribed circumstances. Separate regulations apply
+      to England, Wales and Scotland. In England and Wales, the driver MUST NOT smoke
+      or allow anyone to smoke in an enclosed private vehicle carrying someone under
+      18, including motor caravans. In Scotland it is an offence for anyone aged 18
+      or over to smoke in a private motor vehicle (unless it is parked and being used
+      as living accommodation) when there is someone under 18 in the vehicle and the
+      vehicle is in a public place.
+  - title: "Rule 149 \u2013 Mobile phones"
+    fact: You MUST exercise proper control of your vehicle at all times. You MUST
+      NOT use a hand-held mobile phone, or similar device, when driving or when supervising
+      a learner driver, except to call 999 or 112 in a genuine emergency when it is
+      unsafe or impractical to stop. Never use a hand-held microphone when driving.
+      Using hands-free equipment is also likely to distract your attention from the
+      road. It is far safer not to use any telephone while you are driving or riding
+      - find a safe place to stop first or use the voicemail facility and listen to
+      messages later.<br><br> You may park your vehicle using a hand-held remote control
+      app or device. The app or device MUST be legal, and you should not put other
+      people in danger when you use it.
+  - title: "Rule 150 \u2013 Distractions"
+    fact: There is a danger of driver distraction being caused by in-vehicle systems
+      such as satellite navigation systems, congestion warning systems, PCs, multi-media,
+      etc. You MUST exercise proper control of your vehicle at all times. Do not rely
+      on driver assistance systems such as motorway assist, lane departure warnings,
+      or remote control parking. They are available to assist but you should not reduce
+      your concentration levels. Do not be distracted by maps or screen-based information
+      (such as navigation or vehicle management systems) while driving or riding.
+      If necessary find a safe place to stop.<br><br>As the driver, you are still
+      responsible for the vehicle if you use a driver assistance system (like motorway
+      assist). This is also the case if you use a hand-held remote control parking
+      app or device. You MUST have full control over these systems at all times.
+  - title: Rule 151 slow-moving traffic
+    fact: "In slow-moving traffic. You should<br><br> \u2022\treduce the distance
+      between you and the vehicle ahead to maintain traffic flow<br> \u2022\tnever
+      get so close to the vehicle in front that you cannot stop safely<br> \u2022\tleave
+      enough space to be able to manoeuvre if the vehicle in front breaks down or
+      an emergency vehicle needs to get past<br> \u2022\tnot change lanes to the left
+      to overtake<br> \u2022\tallow access into and from side roads, as blocking these
+      will add to congestion<br> \u2022\tbe aware of cyclists and motorcyclists who
+      may be passing on either side."
+  - title: "Rule 152 \u2013 Residential streets"
+    fact: "Residential streets. You should drive slowly and carefully on streets where
+      there are likely to be pedestrians, cyclists and parked cars. In some areas
+      a 20 mph (32 km/h) maximum speed limit may be in force. Look out for<br><br>
+      \u2022\tvehicles emerging from junctions or driveways<br> \u2022\tvehicles moving
+      off<br> \u2022\tcar doors opening<br> \u2022\tpedestrians<br> \u2022\tchildren
+      running out from between parked cars<br> \u2022\tcyclists and motorcyclists."
+  - title: "Rule 153 \u2013 Traffic-calming measures."
+    fact: On some roads there are features such as road humps, chicanes and narrowings
+      which are intended to slow you down. When you approach these features reduce
+      your speed. Allow cyclists and motorcyclists room to pass through them. Maintain
+      a reduced speed along the whole of the stretch of road within the calming measures.
+      Give way to oncoming road users if directed to do so by signs. You should not
+      overtake other moving road users while in these areas.
+  - title: Rule 154 - Country roads
+    fact: Take extra care on country roads and reduce your speed at approaches to
+      bends, which can be sharper than they appear, and at junctions and turnings,
+      which may be partially hidden. Be prepared for pedestrians, horse riders, cyclists,
+      slow-moving farm vehicles or mud on the road surface. Make sure you can stop
+      within the distance you can see to be clear. You should also reduce your speed
+      where country roads enter villages.
+  - title: "Rule 155 \u2013 Single track roads"
+    fact: Single-track roads. These are only wide enough for one vehicle. They may
+      have special passing places. If you see a vehicle coming towards you, or the
+      driver behind wants to overtake, pull into a passing place on your left, or
+      wait opposite a passing place on your right. Give way to road users coming uphill
+      whenever you can. If necessary, reverse until you reach a passing place to let
+      the other vehicle pass. Slow down when passing pedestrians, cyclists and horse
+      riders.
   factTitle: {fileID: 502353002}
   factContent: {fileID: 1931055752}
 --- !u!4 &1771358495
