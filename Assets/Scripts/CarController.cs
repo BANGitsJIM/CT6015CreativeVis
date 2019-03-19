@@ -6,8 +6,17 @@ public class CarController : MonoBehaviour
 {
     public void GetInput()
     {
-        m_horizontalInput = Input.GetAxis("Horizontal");
-        m_verticalInput = Input.GetAxis("Vertical");
+
+        #if UNITY_EDITOR || UNITY_STANDALONE
+                m_horizontalInput = Input.GetAxis("Horizontal");
+                m_verticalInput = Input.GetAxis("Vertical");
+        #elif UNITY_ANDROID || UNITY_IOS
+                m_horizontalInput = Input.GetAxis("Horizontal");
+                m_verticalInput = Input.GetAxis("Vertical");
+        #endif
+
+
+
     }
 
     private void Steer()
