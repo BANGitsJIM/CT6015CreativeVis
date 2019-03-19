@@ -17,11 +17,12 @@ public class DestructibleController : MonoBehaviour
             Debug.Log(sceneName);
 
             LoadMyScene();
-
+            PreDestroy();
             Destroy(gameObject);
         }
         if (other.tag == "Building")
         {
+            PreDestroy();
             Destroy(gameObject);
         }
     }
@@ -40,12 +41,46 @@ public class DestructibleController : MonoBehaviour
         isQuitting = true;
     }
 
-    private void OnDestroy()
+    private void PreDestroy()
     {
         if (!isQuitting)
         {
             GameObject myObject = GameObject.FindWithTag("GameController");
-            myObject.GetComponent<SignHandler>().generateObjectOnTerrain();
+
+            if (myObject != null)
+            {
+
+                SignHandler signHandler = myObject.GetComponent<SignHandler>();
+
+
+                if (signHandler != null)
+                {
+                    signHandler.generateObjectOnTerrain();
+                }
+            }
+
         }
+    }
+
+
+    private void OnDestroy()
+    {
+        //if (!isQuitting)
+        //{
+        //    GameObject myObject = GameObject.FindWithTag("GameController");
+
+        //    if (myObject != null)
+        //    {
+
+        //        SignHandler signHandler = myObject.GetComponent<SignHandler>();
+
+
+        //        if (signHandler != null)
+        //        {
+        //            signHandler.generateObjectOnTerrain();
+        //        }
+        //    }
+
+        //}
     }
 }

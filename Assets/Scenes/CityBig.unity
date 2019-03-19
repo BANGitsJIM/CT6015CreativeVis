@@ -10889,6 +10889,7 @@ GameObject:
   - component: {fileID: 257833438}
   - component: {fileID: 257833437}
   - component: {fileID: 257833436}
+  - component: {fileID: 257833439}
   m_Layer: 5
   m_Name: Stop Button
   m_TagString: Untagged
@@ -10954,7 +10955,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257833437}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &257833437
@@ -10994,6 +11006,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257833434}
   m_CullTransparentMesh: 0
+--- !u!114 &257833439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257833434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed2050c5ddbbc143ae370a2baa0c211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &258000186
 GameObject:
   m_ObjectHideFlags: 0
@@ -13188,6 +13212,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1533148126987696165, guid: d795bbcf9096a634a9d9656a855e6b0f,
+        type: 3}
+      propertyPath: stopButton
+      value: 
+      objectReference: {fileID: 257833439}
+    - target: {fileID: 1533148126987696165, guid: d795bbcf9096a634a9d9656a855e6b0f,
+        type: 3}
+      propertyPath: goButton
+      value: 
+      objectReference: {fileID: 1573425856}
     m_RemovedComponents:
     - {fileID: 1533148126987696167, guid: d795bbcf9096a634a9d9656a855e6b0f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d795bbcf9096a634a9d9656a855e6b0f, type: 3}
@@ -26748,6 +26782,7 @@ GameObject:
   - component: {fileID: 1573425855}
   - component: {fileID: 1573425854}
   - component: {fileID: 1573425853}
+  - component: {fileID: 1573425856}
   m_Layer: 5
   m_Name: GO Button
   m_TagString: Untagged
@@ -26853,6 +26888,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573425851}
   m_CullTransparentMesh: 0
+--- !u!114 &1573425856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573425851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed2050c5ddbbc143ae370a2baa0c211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1575969384
 GameObject:
   m_ObjectHideFlags: 0
