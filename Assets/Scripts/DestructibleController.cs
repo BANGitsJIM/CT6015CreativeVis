@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class DestructibleController : MonoBehaviour
 {
@@ -12,18 +10,13 @@ public class DestructibleController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Instantiate(destroyedVersion, transform.position, transform.rotation);
-
-            Debug.Log(sceneName);
-
-            LoadMyScene();
             PreDestroy();
-            Destroy(gameObject);
+            Instantiate(destroyedVersion, transform.position, transform.rotation);
+            LoadMyScene();
         }
         if (other.tag == "Building")
         {
             PreDestroy();
-            Destroy(gameObject);
         }
     }
 
@@ -43,44 +36,28 @@ public class DestructibleController : MonoBehaviour
 
     private void PreDestroy()
     {
+        Debug.Log("Destroying the object");
+
         if (!isQuitting)
         {
             GameObject myObject = GameObject.FindWithTag("GameController");
 
             if (myObject != null)
             {
-
                 SignHandler signHandler = myObject.GetComponent<SignHandler>();
-
 
                 if (signHandler != null)
                 {
+                    Debug.Log("Generating new object");
                     signHandler.generateObjectOnTerrain();
                 }
             }
-
         }
-    }
 
+        Destroy(gameObject);
+    }
 
     private void OnDestroy()
     {
-        //if (!isQuitting)
-        //{
-        //    GameObject myObject = GameObject.FindWithTag("GameController");
-
-        //    if (myObject != null)
-        //    {
-
-        //        SignHandler signHandler = myObject.GetComponent<SignHandler>();
-
-
-        //        if (signHandler != null)
-        //        {
-        //            signHandler.generateObjectOnTerrain();
-        //        }
-        //    }
-
-        //}
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
-
     private float m_horizontalInput;
     private float m_verticalInput;
     private float m_steeringAngle;
@@ -30,71 +29,52 @@ public class CarController : MonoBehaviour
 
     public void GetInput()
     {
+        //#if UNITY_EDITOR || UNITY_STANDALONE
 
-       // #if UNITY_EDITOR || UNITY_STANDALONE
+        m_horizontalInput = Input.GetAxis("Horizontal");
+        m_verticalInput = Input.GetAxis("Vertical");
 
-              //  m_horizontalInput = Input.GetAxis("Horizontal");
-               // m_verticalInput = Input.GetAxis("Vertical");
+        //#endif
 
-        //#elif UNITY_ANDROID || UNITY_IOS
+        //#if UNITY_ANDROID || UNITY_IOS
 
-        
-                Quaternion referenceRotation = Quaternion.identity;
-                Quaternion deviceRotation = DeviceRotation.Get();
-                Quaternion eliminationOfXY = Quaternion.Inverse(
-                    Quaternion.FromToRotation(referenceRotation * Vector3.forward,
-                                                deviceRotation * Vector3.forward)
-                );
-                Quaternion rotationZ = eliminationOfXY * deviceRotation;
-                float roll = rotationZ.eulerAngles.z;
+        //float roll = Input.acceleration.x * 2;
+        ////Debug.Log(roll);
 
-                if (roll > 0 && roll < 90)
-                {
-                    m_horizontalInput = -((roll - 10) / (90 - 10));
-                }
-                else if (roll > 270 && roll < 360)
-                {
-                    m_horizontalInput = (roll - 350) / (270 - 350);
-                }
+        //m_horizontalInput = roll;
 
-                 if(stopButton.Pressed())
-                {
-                    brake = -1f;
-                }
-                else
-                {
-                    brake = 0f;
-                }
+        //if (stopButton.Pressed())
+        //{
+        //    brake = -1f;
+        //}
+        //else
+        //{
+        //    brake = 0f;
+        //}
 
-                 if (goButton.Pressed())
-                {
-                    drive = 1f;
-                }
-                else
-                {
-                    drive = 0f;
-                }
+        //if (goButton.Pressed())
+        //{
+        //    drive = 1f;
+        //}
+        //else
+        //{
+        //    drive = 0f;
+        //}
 
-                m_verticalInput = brake + drive;    
-        
-                
-//#endif
+        //m_verticalInput = brake + drive;
 
+        //#endif
     }
 
-   
     private void OnBrakePressed(bool pressed)
     {
-       
     }
 
     private void OnDrivePressed(bool pressed)
     {
-       
     }
 
-
-        private void Steer()
+    private void Steer()
     {
         m_steeringAngle = maxSteeringAngle * m_horizontalInput;
         frontDriverW.steerAngle = m_steeringAngle;
@@ -137,6 +117,4 @@ public class CarController : MonoBehaviour
         Accelerate();
         UpdateWheelPoses();
     }
-
-
 }

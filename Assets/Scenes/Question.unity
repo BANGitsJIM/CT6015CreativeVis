@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: 0}
-  m_SizeDelta: {x: -125, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: -150, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43468552
 MonoBehaviour:
@@ -1416,8 +1416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: 0}
-  m_SizeDelta: {x: -125, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: -150, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &527529848
 MonoBehaviour:
@@ -2321,8 +2321,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 111d8763ec558f24ca2a6a9bc8f7ab1d, type: 2}
-  m_sharedMaterial: {fileID: 21878636249219144, guid: 111d8763ec558f24ca2a6a9bc8f7ab1d,
+  m_fontAsset: {fileID: 11400000, guid: 39f093d9f2dd7b34896bc520cd0b204f, type: 2}
+  m_sharedMaterial: {fileID: 21817537985697590, guid: 39f093d9f2dd7b34896bc520cd0b204f,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2666,8 +2666,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 62.5, y: 0}
-  m_SizeDelta: {x: -125, y: 0}
+  m_AnchoredPosition: {x: 50, y: 0}
+  m_SizeDelta: {x: -150, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117735553
 MonoBehaviour:
@@ -2804,7 +2804,6 @@ GameObject:
   - component: {fileID: 2121227073}
   - component: {fileID: 2121227072}
   - component: {fileID: 2121227074}
-  - component: {fileID: 2121227075}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2986,19 +2985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6149f5b9fd219fe459e286888975df3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2121227075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121227071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb189d4eb4cfbc4a92e890dbe4684fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Question
 --- !u!1 &2133152401
 GameObject:
   m_ObjectHideFlags: 0
