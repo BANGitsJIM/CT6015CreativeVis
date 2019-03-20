@@ -29,41 +29,41 @@ public class CarController : MonoBehaviour
 
     public void GetInput()
     {
-        //#if UNITY_EDITOR || UNITY_STANDALONE
+#if UNITY_EDITOR || UNITY_STANDALONE
 
         m_horizontalInput = Input.GetAxis("Horizontal");
         m_verticalInput = Input.GetAxis("Vertical");
 
-        //#endif
+#endif
 
-        //#if UNITY_ANDROID || UNITY_IOS
+#if UNITY_ANDROID || UNITY_IOS
 
-        //float roll = Input.acceleration.x * 2;
-        ////Debug.Log(roll);
+        float roll = Input.acceleration.x * 2;
+        //Debug.Log(roll);
 
-        //m_horizontalInput = roll;
+        m_horizontalInput = roll;
 
-        //if (stopButton.Pressed())
-        //{
-        //    brake = -1f;
-        //}
-        //else
-        //{
-        //    brake = 0f;
-        //}
+        if (stopButton.Pressed())
+        {
+            brake = -1f;
+        }
+        else
+        {
+            brake = 0f;
+        }
 
-        //if (goButton.Pressed())
-        //{
-        //    drive = 1f;
-        //}
-        //else
-        //{
-        //    drive = 0f;
-        //}
+        if (goButton.Pressed())
+        {
+            drive = 1f;
+        }
+        else
+        {
+            drive = 0f;
+        }
 
-        //m_verticalInput = brake + drive;
+        m_verticalInput = brake + drive;
 
-        //#endif
+#endif
     }
 
     private void OnBrakePressed(bool pressed)
