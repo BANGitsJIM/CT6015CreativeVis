@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.101
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.34489393, g: 0.16678384, b: 0.09813001, a: 0.101}
+  m_IndirectSpecularColor: {r: 0.097467944, g: 0.023682414, b: 0.009735067, a: 0.101}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2154,7 +2154,7 @@ GameObject:
   - component: {fileID: 6301906}
   - component: {fileID: 2267250}
   m_Layer: 0
-  m_Name: House_3
+  m_Name: House 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2173,7 +2173,7 @@ GameObject:
   - component: {fileID: 6301908}
   - component: {fileID: 2267252}
   m_Layer: 0
-  m_Name: House_2
+  m_Name: House 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2192,7 +2192,7 @@ GameObject:
   - component: {fileID: 6301910}
   - component: {fileID: 2267254}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2584,6 +2584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4533060}
+  - component: {fileID: 4372325}
   m_Layer: 0
   m_Name: 4xCity
   m_TagString: Untagged
@@ -2591,6 +2592,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &4372325
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4372324}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13372513ef360574ba6fcbb212942180, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4372326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2687,7 +2707,7 @@ GameObject:
   - component: {fileID: 6301958}
   - component: {fileID: 2267302}
   m_Layer: 0
-  m_Name: Shop
+  m_Name: House 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8183,7 +8203,7 @@ GameObject:
   - component: {fileID: 7619451}
   - component: {fileID: 7619450}
   m_Layer: 0
-  m_Name: House_3
+  m_Name: House 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8197,7 +8217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7619448}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8228498, y: 0.059581596, z: -0.23080222}
+  m_LocalPosition: {x: 0.8228498, y: 0.0595816, z: -0.2308022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1822929633}
@@ -9696,7 +9716,7 @@ Light:
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_NormalBias: 0
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
@@ -11586,7 +11606,7 @@ GameObject:
   - component: {fileID: 300054320}
   - component: {fileID: 300054319}
   m_Layer: 0
-  m_Name: Shop
+  m_Name: House 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14163,7 +14183,7 @@ GameObject:
   - component: {fileID: 508672438}
   - component: {fileID: 508672437}
   m_Layer: 0
-  m_Name: House_2
+  m_Name: House 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14507,6 +14527,8 @@ GameObject:
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
   - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
+  - component: {fileID: 534669908}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14595,6 +14617,41 @@ MonoBehaviour:
   followSpeed: 0.2
   lookSpeed: 80
   dragSpeed: 2
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4913955666ddaa945b3635af72a593aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTransform: {fileID: 0}
+  shakeDuration: 3
+  shakeAmount: 0.03
+  decreaseFactor: 1
+--- !u!114 &534669908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860e82cd7a6bb4a29a4b7add4ec78d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shutterAngle: 360
+  _sampleCount: 8
+  _frameBlending: 0.4
+  _reconstructionShader: {fileID: 4800000, guid: 60701d53f4c638048b5e49c197d08b77,
+    type: 3}
+  _frameBlendingShader: {fileID: 4800000, guid: 95caa7c3844725840aec8dad64ac258e,
+    type: 3}
 --- !u!1 &542077906
 GameObject:
   m_ObjectHideFlags: 0
@@ -19372,7 +19429,7 @@ GameObject:
   - component: {fileID: 977763879}
   - component: {fileID: 977763878}
   m_Layer: 0
-  m_Name: House_2
+  m_Name: House 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19386,7 +19443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977763876}
   m_LocalRotation: {x: -0, y: 0.70710677, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.3158216, y: -0.4796152, z: 1.2188463}
+  m_LocalPosition: {x: -1.315822, y: -0.4796152, z: 1.218846}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747703245}
@@ -20378,7 +20435,7 @@ GameObject:
   - component: {fileID: 1057425930}
   - component: {fileID: 1057425929}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22052,7 +22109,7 @@ GameObject:
   - component: {fileID: 1174578276}
   - component: {fileID: 1174578275}
   m_Layer: 0
-  m_Name: House_3
+  m_Name: House 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23660,7 +23717,7 @@ GameObject:
   - component: {fileID: 1311946531}
   - component: {fileID: 1311946530}
   m_Layer: 0
-  m_Name: Shop
+  m_Name: House 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26683,7 +26740,7 @@ GameObject:
   - component: {fileID: 1582977071}
   - component: {fileID: 1582977070}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26697,7 +26754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582977068}
   m_LocalRotation: {x: 0.7071068, y: 0.000000026558938, z: -0.000000026558938, w: 0.7071068}
-  m_LocalPosition: {x: -0.000003873872, y: 1.0449888, z: 1.4357933}
+  m_LocalPosition: {x: -0.000003873872, y: 1.044989, z: 1.435793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 692989344}
@@ -27626,7 +27683,7 @@ GameObject:
   - component: {fileID: 1630417530}
   - component: {fileID: 1630417529}
   m_Layer: 0
-  m_Name: House_2
+  m_Name: House 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29242,7 +29299,7 @@ GameObject:
   - component: {fileID: 1745677047}
   - component: {fileID: 1745677046}
   m_Layer: 0
-  m_Name: House
+  m_Name: House 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31331,7 +31388,7 @@ GameObject:
   - component: {fileID: 1911415272}
   - component: {fileID: 1911415271}
   m_Layer: 0
-  m_Name: Shop
+  m_Name: House 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31345,7 +31402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911415269}
   m_LocalRotation: {x: 0.7071068, y: -0.000000004754461, z: 0.000000004754461, w: 0.7071068}
-  m_LocalPosition: {x: 0.6533612, y: -0.36632898, z: -1.2333483}
+  m_LocalPosition: {x: 0.6533612, y: -0.366329, z: -1.233348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 112871282}
@@ -32565,7 +32622,7 @@ GameObject:
   - component: {fileID: 2080482858}
   - component: {fileID: 2080482857}
   m_Layer: 0
-  m_Name: House_3
+  m_Name: House 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

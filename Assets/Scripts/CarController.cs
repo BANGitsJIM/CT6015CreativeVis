@@ -31,12 +31,12 @@ public class CarController : MonoBehaviour
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
 
-        /*m_horizontalInput = Input.GetAxis("Horizontal");
+        m_horizontalInput = Input.GetAxis("Horizontal");
         m_verticalInput = Input.GetAxis("Vertical");
 
 #endif
 
-#if UNITY_ANDROID || UNITY_IOS*/
+#if UNITY_ANDROID || UNITY_IOS
 
         float roll = Input.acceleration.x * 2;
         //Debug.Log(roll);
@@ -62,7 +62,6 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
-        m_horizontalInput = Input.GetAxis("Horizontal");
 
 #endif
     }
