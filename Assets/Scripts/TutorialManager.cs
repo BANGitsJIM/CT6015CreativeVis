@@ -92,11 +92,11 @@ public class TutorialManager : MonoBehaviour
         }
         else if (popUpIndex == 2)
         {
-            if (carController.m_horizontalInput == 1)
+            if (carController.m_horizontalInput < 0)
             {
                 turnRight = true;
             }
-            if (carController.m_horizontalInput == -1)
+            if (carController.m_horizontalInput > 0)
             {
                 turnLeft = true;
             }
