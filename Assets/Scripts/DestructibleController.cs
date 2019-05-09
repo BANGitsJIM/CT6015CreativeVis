@@ -5,11 +5,14 @@ public class DestructibleController : MonoBehaviour
     public GameObject destroyedVersion;
     private bool isQuitting = false;
     public string sceneName;
+    public bool SpawnOnDeath = true;
+    public bool thisSignDestroyed = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            PlayerDestroyed();
             PreDestroy();
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             LoadMyScene();
@@ -18,6 +21,12 @@ public class DestructibleController : MonoBehaviour
         {
             PreDestroy();
         }
+    }
+
+    private void PlayerDestroyed()
+    {
+        //Debug.Log("Player Destroyed This Sign");
+        thisSignDestroyed = true;
     }
 
     private void LoadMyScene()
@@ -46,7 +55,7 @@ public class DestructibleController : MonoBehaviour
             {
                 SignHandler signHandler = myObject.GetComponent<SignHandler>();
 
-                if (signHandler != null)
+                if ((signHandler != null))
                 {
                     Debug.Log("Generating new object");
                     signHandler.generateObjectOnTerrain();

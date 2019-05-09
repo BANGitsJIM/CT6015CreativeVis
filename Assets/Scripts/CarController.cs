@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class CarController : MonoBehaviour
 {
-    private float m_horizontalInput;
-    private float m_verticalInput;
-    private float m_steeringAngle;
+    public float m_horizontalInput;
+    public float m_verticalInput;
+    public float m_steeringAngle;
 
     public WheelCollider frontDriverW, frontPassW;
     public WheelCollider rearDriverW, rearPassW;
@@ -19,8 +19,8 @@ public class CarController : MonoBehaviour
     public ButtonPressed stopButton;
     public ButtonPressed goButton;
 
-    private float brake;
-    private float drive;
+    public float brake = 0;
+    public float drive = 0;
 
     private void Start()
     {
@@ -31,12 +31,12 @@ public class CarController : MonoBehaviour
     {
 #if UNITY_EDITOR || UNITY_STANDALONE
 
-        m_horizontalInput = Input.GetAxis("Horizontal");
+        /*m_horizontalInput = Input.GetAxis("Horizontal");
         m_verticalInput = Input.GetAxis("Vertical");
 
 #endif
 
-#if UNITY_ANDROID || UNITY_IOS
+#if UNITY_ANDROID || UNITY_IOS*/
 
         float roll = Input.acceleration.x * 2;
         //Debug.Log(roll);
@@ -62,6 +62,7 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
+        m_horizontalInput = Input.GetAxis("Horizontal");
 
 #endif
     }

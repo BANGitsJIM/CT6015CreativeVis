@@ -64,6 +64,4 @@ public class CameraController : MonoBehaviour
 
         transform.Translate(move, Space.World);
     }
-
-   
 }
