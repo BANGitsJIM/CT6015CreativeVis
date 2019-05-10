@@ -29,12 +29,12 @@ public class CarController : MonoBehaviour
 
     public void GetInput()
     {
-        /*#if UNITY_EDITOR || UNITY_STANDALONE
+#if UNITY_EDITOR || UNITY_STANDALONE
 
-                m_horizontalInput = Input.GetAxis("Horizontal");
-                m_verticalInput = Input.GetAxis("Vertical");
+        m_horizontalInput = Input.GetAxis("Horizontal");
+        m_verticalInput = Input.GetAxis("Vertical");
 
-        #endif*/
+#endif
 
 #if UNITY_ANDROID || UNITY_IOS
 
@@ -62,7 +62,7 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
-        m_horizontalInput = Input.GetAxis("Horizontal");
+
 #endif
     }
 

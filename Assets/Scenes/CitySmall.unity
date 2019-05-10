@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.101
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.031062461, g: 0.013255759, b: 0.035163715, a: 0.101}
+  m_IndirectSpecularColor: {r: 0.19332325, g: 0.11914899, b: 0.2064921, a: 0.101}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8784,7 +8784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTransform: {fileID: 534669905}
   shakeDuration: 3
-  shakeAmount: 0.05
+  shakeAmount: 0.03
   decreaseFactor: 1
 --- !u!114 &534669908
 MonoBehaviour:
@@ -10200,6 +10200,7 @@ GameObject:
   - component: {fileID: 1821279849}
   - component: {fileID: 1821279848}
   - component: {fileID: 1821279847}
+  - component: {fileID: 1821279852}
   m_Layer: 0
   m_Name: CollisionGameObject
   m_TagString: Building
@@ -10273,6 +10274,19 @@ Transform:
   m_Father: {fileID: 4533060}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1821279852
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821279846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 5.76, z: 1.38}
+  m_Center: {x: 7.21, y: 3.13, z: -11.51}
 --- !u!1 &1905878184
 GameObject:
   m_ObjectHideFlags: 0
@@ -10454,7 +10468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 219729866}
-  time: 299
+  time: 359
   score: 0
   answeredQuestions: 0
   maxScore: 10
