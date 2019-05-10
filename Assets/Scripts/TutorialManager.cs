@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class TutorialManager : MonoBehaviour
 {
     public GameObject[] popUps;
-    private int popUpIndex;
+    private int popUpIndex = -1;
 
     public ButtonPressed GoButton;
     public ButtonPressed StopButton;
     public ButtonPressed ResetButton;
     public ButtonPressed ExitButton;
+    public ButtonPressed StartButton;
+    public ButtonPressed ContinueButton;
 
     private GameObject car;
     private CarController carController;
@@ -22,6 +24,8 @@ public class TutorialManager : MonoBehaviour
     private bool turnRight = false;
     private bool signSelected = false;
 
+    private bool touchSingle = false;
+    private bool touchDouble = false;
     private bool goPressed = false;
     private bool stopPressed = false;
     private bool startTilt = false;
@@ -32,6 +36,13 @@ public class TutorialManager : MonoBehaviour
     {
         car = GameObject.FindWithTag("Player");
         carController = car.GetComponent<CarController>();
+        StartCoroutine(StartPopUps(3));
+    }
+
+    private IEnumerator StartPopUps(float myDelay)
+    {
+        yield return new WaitForSeconds(myDelay);
+        popUpIndex++;
     }
 
     private void Update()
@@ -47,9 +58,57 @@ public class TutorialManager : MonoBehaviour
                 popUps[i].SetActive(false);
             }
         }
-
         if (popUpIndex == 0)
         {
+            if (StartButton.Pressed())
+            {
+                popUpIndex++;
+            }
+        }
+        else if (popUpIndex == 1)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                touchSingle = true;
+            }
+
+            if (touchSingle == true)
+            {
+                if (waitTime <= 0)
+                {
+                    waitTime = 2f;
+                    popUpIndex++;
+                }
+                else
+                {
+                    waitTime -= Time.deltaTime;
+                }
+            }
+        }
+        else if (popUpIndex == 2)
+        {
+            if (Input.GetButton("Fire2"))
+            {
+                touchDouble = true;
+            }
+
+            if (touchDouble == true)
+            {
+                if (waitTime <= 0)
+                {
+                    waitTime = 2f;
+                    popUpIndex++;
+                }
+                else
+                {
+                    waitTime -= Time.deltaTime;
+                }
+            }
+        }
+        else if (popUpIndex == 3)
+        {
+            GoButton.gameObject.SetActive(true);
+
             if (GoButton.Pressed())
             {
                 goPressed = true;
@@ -68,7 +127,7 @@ public class TutorialManager : MonoBehaviour
                 }
             }
         }
-        else if (popUpIndex == 1)
+        else if (popUpIndex == 4)
         {
             StopButton.gameObject.SetActive(true);
 
@@ -90,7 +149,7 @@ public class TutorialManager : MonoBehaviour
                 }
             }
         }
-        else if (popUpIndex == 2)
+        else if (popUpIndex == 5)
         {
             if (carController.m_horizontalInput < 0)
             {
@@ -105,7 +164,7 @@ public class TutorialManager : MonoBehaviour
             {
                 if (waitTime <= 0)
                 {
-                    waitTime = 3f;
+                    waitTime = 2f;
                     popUpIndex++;
                 }
                 else
@@ -114,7 +173,7 @@ public class TutorialManager : MonoBehaviour
                 }
             }
         }
-        else if (popUpIndex == 3)
+        else if (popUpIndex == 6)
         {
             ResetButton.gameObject.SetActive(true);
 
@@ -123,19 +182,14 @@ public class TutorialManager : MonoBehaviour
                 popUpIndex++;
             }
         }
-        else if (popUpIndex == 4)
+        else if (popUpIndex == 7)
         {
-            if (waitTime <= 0)
+            if (ContinueButton.Pressed())
             {
-                waitTime = 2f;
                 popUpIndex++;
             }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
         }
-        else if (popUpIndex == 5)
+        else if (popUpIndex == 8)
         {
             GameObject game = GameObject.FindWithTag("GameController");
             SignHandler signHandler = game.GetComponent<SignHandler>();
@@ -153,7 +207,7 @@ public class TutorialManager : MonoBehaviour
                 popUpIndex++;
             }
         }
-        else if (popUpIndex == 6)
+        else if (popUpIndex == 9)
         {
             ExitButton.gameObject.SetActive(true);
         }
