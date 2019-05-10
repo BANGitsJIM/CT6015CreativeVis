@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1368763162}
   - component: {fileID: 1368763164}
   - component: {fileID: 278979448774182921}
+  - component: {fileID: 8867420520808535653}
   m_Layer: 0
   m_Name: SignBreakable
   m_TagString: Sign
@@ -112,6 +113,8 @@ MonoBehaviour:
   destroyedVersion: {fileID: 218624199134755380, guid: 5d2cfec2da95f3540b8b31a135f79304,
     type: 3}
   sceneName: Fact
+  SpawnOnDeath: 1
+  thisSignDestroyed: 0
 --- !u!65 &1368763164
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -138,3 +141,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.82956773, y: 1.3136253, z: 0.73662496}
   m_Center: {x: -0.11319944, y: 4.3886725e-16, z: 0.15588251}
+--- !u!114 &8867420520808535653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368763161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 3
+  outlineColor: {r: 0.92812186, g: 0.9528302, b: 0.049439307, a: 1}
+  outlineWidth: 3
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

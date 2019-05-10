@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizBreakable
       objectReference: {fileID: 0}
+    - target: {fileID: 1368763165, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1368763162, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
+      propertyPath: sceneName
+      value: Question
+      objectReference: {fileID: 0}
     - target: {fileID: 1368763168, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -54,14 +62,6 @@ PrefabInstance:
     - target: {fileID: 1368763168, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1368763165, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1368763162, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
-      propertyPath: sceneName
-      value: Question
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 687b806837037f049ae46fa4ce27a993, type: 3}
