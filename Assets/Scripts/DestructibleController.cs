@@ -8,6 +8,20 @@ public class DestructibleController : MonoBehaviour
     public bool SpawnOnDeath = true;
     public bool thisSignDestroyed = false;
 
+    private AudioManager audioManager;
+
+    private void Start()
+    {
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager Found in the scene.!!!");
+        }
+        else
+        {
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -27,6 +41,7 @@ public class DestructibleController : MonoBehaviour
     {
         //Debug.Log("Player Destroyed This Sign");
         thisSignDestroyed = true;
+        audioManager.PlaySound("WoodBreak");
     }
 
     private void LoadMyScene()

@@ -15,17 +15,13 @@ public class CarController : MonoBehaviour
     public Transform rearDriverT, rearPassT;
     public float maxSteeringAngle = 30;
     public float motorForce = 50;
+    public string engineSound = "Engine";
 
     public ButtonPressed stopButton;
     public ButtonPressed goButton;
 
     public float brake = 0;
     public float drive = 0;
-
-    private void Start()
-    {
-        //stopButton.OnPointerDown()
-    }
 
     public void GetInput()
     {
@@ -62,6 +58,7 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
+        m_horizontalInput = Input.GetAxis("Horizontal");
 
 #endif
     }

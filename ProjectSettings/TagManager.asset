@@ -7,6 +7,10 @@ TagManager:
   - Sign
   - Terrain
   - Building
+  - UiButton
+  - GoBtn
+  - StopBtn
+  - music
   layers:
   - Default
   - TransparentFX

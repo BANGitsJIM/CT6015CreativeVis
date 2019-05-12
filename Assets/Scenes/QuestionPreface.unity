@@ -1140,6 +1140,8 @@ MonoBehaviour:
 
     The test ends when you run out of time or you have answered 10 questions.
 
+    You will have 6 minutes, to complete the test.
+
 
     Click START when you are ready to proceed.
 
@@ -1213,12 +1215,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1995460379}
-    characterCount: 272
+    characterCount: 319
     spriteCount: 0
-    spaceCount: 53
-    wordCount: 53
+    spaceCount: 62
+    wordCount: 62
     linkCount: 0
-    lineCount: 7
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
