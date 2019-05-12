@@ -58,7 +58,6 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
-        m_horizontalInput = Input.GetAxis("Horizontal");
 
 #endif
     }
