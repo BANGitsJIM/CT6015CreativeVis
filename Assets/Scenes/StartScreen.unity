@@ -24789,6 +24789,18 @@ MonoBehaviour:
     resetOnSceneChange: 1
     volume: 0.8
     pitch: 0.9
+  - name: Correct
+    loop: 0
+    clip: {fileID: 8300000, guid: bfa6d76833669c7489adb68fda63dd06, type: 3}
+    resetOnSceneChange: 1
+    volume: 0.8
+    pitch: 0.9
+  - name: Incorrect
+    loop: 0
+    clip: {fileID: 8300000, guid: c61c39712dcba2a48bd4954d72cfc351, type: 3}
+    resetOnSceneChange: 1
+    volume: 0.8
+    pitch: 0.9
 --- !u!114 &1354300559
 MonoBehaviour:
   m_ObjectHideFlags: 0

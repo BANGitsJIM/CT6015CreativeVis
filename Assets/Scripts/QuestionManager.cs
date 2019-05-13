@@ -32,6 +32,11 @@ public class QuestionManager : MonoBehaviour
 
     private void Start()
     {
+        if (GameObject.FindWithTag("GameController").GetComponent<Timer>().answeredQuestions == 0f)
+        {
+            unansweredQuestions = questions.ToList<Question>();
+        }
+
         if (unansweredQuestions == null || unansweredQuestions.Count == 0)
         {
             unansweredQuestions = questions.ToList<Question>();
@@ -68,6 +73,7 @@ public class QuestionManager : MonoBehaviour
             GameObject gameController = GameObject.FindWithTag("GameController");
             gameController.GetComponent<Timer>().score++;
             gameController.GetComponent<Timer>().answeredQuestions++;
+            GameObject.FindWithTag("music").GetComponent<AudioManager>().PlaySound("Correct");
         }
         else
         {
@@ -76,6 +82,12 @@ public class QuestionManager : MonoBehaviour
 
             GameObject gameController = GameObject.FindWithTag("GameController");
             gameController.GetComponent<Timer>().answeredQuestions++;
+            GameObject.FindWithTag("music").GetComponent<AudioManager>().PlaySound("Incorrect");
         }
+    }
+
+    public void ResetQuiz()
+    {
+        unansweredQuestions = questions.ToList<Question>();
     }
 }

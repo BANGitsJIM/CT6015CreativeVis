@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DestructibleController : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class DestructibleController : MonoBehaviour
             PreDestroy();
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             LoadMyScene();
+            Handheld.Vibrate();
         }
         if (other.tag == "Building")
         {
@@ -46,10 +48,28 @@ public class DestructibleController : MonoBehaviour
 
     private void LoadMyScene()
     {
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string currentSceneName = currentScene.name;
+
+        //Retrieve game Object
+        GameObject myObject = GameObject.FindWithTag("GameController");
+
         if (!string.IsNullOrEmpty(sceneName))
         {
-            GameObject myObject = GameObject.FindWithTag("GameController");
-            myObject.GetComponent<LoadScene>().AddScene(sceneName);
+            if (!isScene_CurrentlyLoaded(sceneName))
+            {
+                if (myObject != null)
+                {
+                    myObject.GetComponent<LoadScene>().AddScene(sceneName);
+                }
+            }
+            else
+            {
+                return;
+            }
         }
     }
 
@@ -60,7 +80,7 @@ public class DestructibleController : MonoBehaviour
 
     private void PreDestroy()
     {
-        Debug.Log("Destroying the object");
+        //Debug.Log("Destroying the object");
 
         if (!isQuitting)
         {
@@ -72,7 +92,7 @@ public class DestructibleController : MonoBehaviour
 
                 if ((signHandler != null))
                 {
-                    Debug.Log("Generating new object");
+                    //Debug.Log("Generating new object");
                     signHandler.generateObjectOnTerrain();
                 }
             }
@@ -81,7 +101,24 @@ public class DestructibleController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //Bool to check if a scene already exists
+    private bool isScene_CurrentlyLoaded(string sceneName_no_extention)
+    {
+        for (int i = 0; i < SceneManager.sceneCount; ++i)
+        {
+            Scene scene = SceneManager.GetSceneAt(i);
+            if (scene.name == sceneName_no_extention)
+            {
+                //the scene is already loaded
+                return true;
+            }
+        }
+
+        return false;//scene not currently loaded in the hierarchy
+    }
+
     private void OnDestroy()
     {
+        //LoadMyScene();
     }
 }

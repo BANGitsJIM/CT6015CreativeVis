@@ -163,6 +163,7 @@ public class CarController : MonoBehaviour
             //Debug.Log("bump");
             AudioManager audioManager = GameObject.FindWithTag("music").GetComponent<AudioManager>();
             audioManager.PlaySound("Bump");
+            Handheld.Vibrate();
         }
     }
 }
