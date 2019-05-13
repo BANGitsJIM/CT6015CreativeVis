@@ -155,4 +155,14 @@ public class CarController : MonoBehaviour
         AudioSource engineSound = this.gameObject.GetComponent<AudioSource>();
         engineSound.pitch = enginePitch;
     }
+
+    private void OnCollisionEnter(Collision hit)
+    {
+        if (hit.transform.gameObject.tag == "Building")
+        {
+            //Debug.Log("bump");
+            AudioManager audioManager = GameObject.FindWithTag("music").GetComponent<AudioManager>();
+            audioManager.PlaySound("Bump");
+        }
+    }
 }

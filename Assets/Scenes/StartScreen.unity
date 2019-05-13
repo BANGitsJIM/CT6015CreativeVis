@@ -24619,8 +24619,14 @@ MonoBehaviour:
     loop: 0
     clip: {fileID: 8300000, guid: 783aa340ef1706f4aa10af6108f7e670, type: 3}
     resetOnSceneChange: 1
-    volume: 0.521
+    volume: 0.6
     pitch: 1
+  - name: Bump
+    loop: 0
+    clip: {fileID: 8300000, guid: 047e820e811fee54486ec5515f1e40a2, type: 3}
+    resetOnSceneChange: 1
+    volume: 0.8
+    pitch: 0.9
 --- !u!114 &1354300559
 MonoBehaviour:
   m_ObjectHideFlags: 0
