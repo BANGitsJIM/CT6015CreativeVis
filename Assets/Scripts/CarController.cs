@@ -15,7 +15,10 @@ public class CarController : MonoBehaviour
     public Transform rearDriverT, rearPassT;
     public float maxSteeringAngle = 30;
     public float motorForce = 50;
-    public string engineSound = "Engine";
+    public float Speed;
+
+    [Range(0.5f, 1.5f)]
+    public float enginePitch = 0.5f;
 
     public ButtonPressed stopButton;
     public ButtonPressed goButton;
@@ -58,6 +61,7 @@ public class CarController : MonoBehaviour
         }
 
         m_verticalInput = brake + drive;
+        //m_horizontalInput = Input.GetAxis("Horizontal");
 
 #endif
     }
@@ -112,5 +116,43 @@ public class CarController : MonoBehaviour
         Steer();
         Accelerate();
         UpdateWheelPoses();
+        CheckMute();
+        UpdatePitch();
+    }
+
+    private void CheckMute() //Controls engine sound if audio manager is muted
+    {
+        AudioSource pitch = this.gameObject.GetComponent<AudioSource>();
+        AudioManager audioManager = GameObject.FindWithTag("music").GetComponent<AudioManager>();
+
+        if (audioManager.mute == true)
+        {
+            pitch.mute = true;
+        }
+        else
+        {
+            pitch.mute = false;
+        }
+    }
+
+    private void UpdatePitch()
+    {
+        Rigidbody car = this.gameObject.GetComponent<Rigidbody>();
+        //enginePitch = car.velocity.sqrMagnitude;
+        Speed = car.velocity.magnitude;
+        //enginePitch = (Speed - 0.5f) / (1.5f - 0.5f);
+        enginePitch = Mathf.Lerp(0.5f, 1.5f, (Speed / 4));
+
+        if (enginePitch > 1.5f)
+        {
+            enginePitch = 1.5f;
+        }
+        else if (enginePitch < 0.5f)
+        {
+            enginePitch = 0.5f;
+        }
+        //enginePitch = Speed;
+        AudioSource engineSound = this.gameObject.GetComponent<AudioSource>();
+        engineSound.pitch = enginePitch;
     }
 }

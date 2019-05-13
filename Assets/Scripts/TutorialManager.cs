@@ -194,7 +194,7 @@ public class TutorialManager : MonoBehaviour
             GameObject game = GameObject.FindWithTag("GameController");
             SignHandler signHandler = game.GetComponent<SignHandler>();
             signHandler.enabled = true;
-            Debug.Log(signSelected);
+            // Debug.Log(signSelected);
 
             if (signSelected == false)
             {

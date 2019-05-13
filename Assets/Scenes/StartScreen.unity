@@ -24610,10 +24610,10 @@ MonoBehaviour:
   mute: 0
   sounds:
   - name: Music
-    loop: 0
+    loop: 1
     clip: {fileID: 8300000, guid: 640e52fe455fdda489a97b5bdf72a822, type: 3}
     resetOnSceneChange: 1
-    volume: 1
+    volume: 0.8
     pitch: 1
   - name: WoodBreak
     loop: 0
